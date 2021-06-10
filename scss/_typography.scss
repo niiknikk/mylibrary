@@ -1,0 +1,47 @@
+.heading-primary{
+    display: inline-block;
+    position: relative;
+    font-family: $literata;
+    font-size: 7rem;
+    font-style: italic;
+    color: #161616dc;
+    text-align: center;
+    z-index: 2;
+    @include respond(phone){
+        font-size: 4.5rem;
+    }
+
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 30%;
+        background-color: #867ae9;
+        opacity: .8;
+        border-radius: 47% 23% 61% 94% / 9% 14% 27% 26% ;
+        transform: translateY(-40%);
+        z-index: -1;
+    }
+}
+
+
+.sub-heading-primary {
+    display: block;
+    font-family: $literata;
+    font-size: 3rem;
+    color: #161616a9;
+    // transform: translateX(30%);
+    margin-left: 5rem;
+    @include respond(tab-land){
+        font-size: 2.7rem;
+    }
+    @include respond(tab-port){
+        font-size: 2.4rem;
+    }
+    @include respond(phone){
+        font-size: 2rem;
+        margin-left: 3.5rem;
+    }
+}
